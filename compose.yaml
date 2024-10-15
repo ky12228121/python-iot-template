@@ -1,0 +1,12 @@
+services:
+  app:
+    image: mcr.microsoft.com/vscode/devcontainers/python:3.12-bookworm
+    container_name: python_devcontainer
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: sleep infinity
+
+  mqtt:
+    image: eclipse-mosquitto:latest
+    container_name: python_mqtt_broker

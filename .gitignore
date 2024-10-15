@@ -1,0 +1,4 @@
+logmod/
+mqttmod/
+*.log
+.env
